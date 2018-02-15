@@ -13,11 +13,11 @@ header, section, article, nav, aside, footer, div {
 #SiteLogo{
   margin-left: auto;
   width: auto;
-  height: auto;
+  height: 50px;
 }
 
 #SiteTitle{
-  margin-right: auto;
+  
   width: auto;
-  height: auto;
+  height: 50px;
 }
