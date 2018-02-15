@@ -5,15 +5,17 @@ body{
 
 header, section, article, nav, aside, footer, div {
  font-family: sans-serif;
- border: 1px dotted #000;
+ border: 1px solid #000;
  padding: 10px;
  margin: 10px;
 }
 
-#SiteLogo{
-  margin: auto;
+#PageHeader{
+  display: flex;
+  justify-content: space-between;
 }
 
-#SiteTitle{
 
+#PageFooter{
+  text-align: center;
 }
