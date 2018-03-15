@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var oneLinerJoke = require('one-liner-joke');
-
+app.use(express.static('public'));
 app.get('/', function(req, res){
   res.send("Hello world! by express");
 })
@@ -27,16 +27,16 @@ app.get('/calc', function(req, res){
   var oper = req.query.oper;
   var temp = "+";
   if(oper == "add"){
-    res.send("X + Y="+(x + y));
+    res.send("X + Y = "+(x + y));
   }
   else if(oper == "sub"){
-    res.send("X - Y="+(x - y));
+    res.send("X - Y = "+(x - y));
   }
   else if(oper == "div"){
-    res.send("X / Y="+(x / y));
+    res.send("X / Y = "+(x / y));
   }
   else if(oper == "mul"){
-    res.send("X * Y="+(x * y));
+    res.send("X * Y = "+(x * y));
   }
 
 
