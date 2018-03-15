@@ -16,8 +16,4 @@ function addContent () {
 	// 2. modify its html attribute by adding items_html
 	var test = document.getElementById("content");
 	test.innerHTML = items_html;
-<<<<<<< HEAD
-=======
-
->>>>>>> 7a59941bf1e91cc4c37ad036005e7ec89740cbf3
 }
