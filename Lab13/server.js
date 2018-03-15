@@ -25,6 +25,20 @@ app.get('/calc', function(req, res){
   var x = parseInt(req.query.x);
   var y = parseInt(req.query.y);
   var oper = req.query.oper;
-  res.send("X + Y="+(x + y));
+  var temp = "+";
+  if(oper == "add"){
+    res.send("X + Y="+(x + y));
+  }
+  else if(oper == "sub"){
+    res.send("X - Y="+(x - y));
+  }
+  else if(oper == "div"){
+    res.send("X / Y="+(x / y));
+  }
+  else if(oper == "mul"){
+    res.send("X * Y="+(x * y));
+  }
+
+
 })
 app.listen(8080);
