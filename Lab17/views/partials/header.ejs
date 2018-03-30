@@ -1,25 +1,15 @@
-<header>
-
-  <div id="bannerZone">
-    <img src="../Images/water.gif" id="banner" alt="This will display an animated GIF" />
-  </div>
-
-  <div id="websiteTitle"> <!--Website Title-->
-    <h1>Website Name</h1>
-  </div>
-
-  <div id="menubar"> <!-- holds the menubar -->
-    <nav> <!--Login and Logout Menubar-->
-      <ul>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Logout</a></li>
-      </ul>
-    </nav>
-  </div>
-
-  <div id="searchbar">
-    <form name="search" method="get" onsubmit="return validate()" action="SearchPage.html" id="searchform">
-      <input type="text" name = "q" id="searchbox" size="40">
-      <input type="submit" value="X" id="submit">
-    </form>
-  </div>
+<!-- views/partials/header.ejs -->
+<nav class="navbar navbar-default" role="navigation">
+<div class="container-fluid">
+ <div class="navbar-header">
+ <a class="navbar-brand" href="#">
+ <span class="glyphicon glyphicon glyphicon-tree-deciduous"></span>
+ EJS Is Fun
+ </a>
+ <ul class="nav navbar-nav">
+ <li><a href="/">Home</a></li>
+ <li><a href="/about">About</a></li>
+ </ul>
+ </div>
+</div>
+</nav>
